@@ -3,64 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Biology</title>
+    <title>Cell Structure and Function</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
 
     <!-- Video Lecture Section -->
     <section id="lecture">
-        <h1>Video Lecture: Introduction to Biology</h1>
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/tZE_fQFK8EY?si=WuPnm0BwyLZ8AHBJ" 
+        <h1>Video Lecture: Cell Structure and Function</h1>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/t5DvF5OVr1Y?si=wO8Uo4rDEfIS9i-d" 
                 title="YouTube video player" frameborder="0" allowfullscreen></iframe>
     </section>
 
     <!-- Quiz Section -->
     <section id="quiz">
-        <h2>Quiz: Introduction to Biology</h2>
+        <h2>Quiz: Cell Structure and Function</h2>
         <form id="quizForm">
             <div class="quiz-question">
-                <p>1. Which of the following is not a characteristic of living organisms?</p>
-                <input type="radio" name="q1" value="A"> A. Growth<br>
-                <input type="radio" name="q1" value="B"> B. Reproduction<br>
-                <input type="radio" name="q1" value="C"> C. Photosynthesis<br>
-                <input type="radio" name="q1" value="D"> D. Response to stimuli<br>
+                <p>1. What is the primary function of the nucleus in a eukaryotic cell?</p>
+                <input type="radio" name="q1" value="A"> A. Protein synthesis<br>
+                <input type="radio" name="q1" value="B"> B. Containing genetic material<br>
                 <span class="feedback" id="feedback1"></span>
             </div>
 
             <div class="quiz-question">
-                <p>2. What is the basic unit of life?</p>
-                <input type="radio" name="q2" value="A"> A. Atom<br>
-                <input type="radio" name="q2" value="B"> B. Molecule<br>
-                <input type="radio" name="q2" value="C"> C. Cell<br>
-                <input type="radio" name="q2" value="D"> D. Tissue<br>
+                <p>2. Which of the following is a feature of prokaryotic cells?</p>
+                <input type="radio" name="q2" value="A"> A. Presence of membrane-bound organelles<br>
+                <input type="radio" name="q2" value="B"> B. Absence of a true nucleus<br>
                 <span class="feedback" id="feedback2"></span>
             </div>
 
             <div class="quiz-question">
-                <p>3. Which process is responsible for passing genetic information from parents to offspring?</p>
-                <input type="radio" name="q3" value="A"> A. Respiration<br>
-                <input type="radio" name="q3" value="B"> B. Metabolism<br>
-                <input type="radio" name="q3" value="C"> C. Reproduction<br>
-                <input type="radio" name="q3" value="D"> D. Growth<br>
+                <p>3. Mitochondria are known as the powerhouse of the cell because:</p>
+                <input type="radio" name="q3" value="A"> A. They store genetic information<br>
+                <input type="radio" name="q3" value="B"> B. They generate ATP through respiration<br>
                 <span class="feedback" id="feedback3"></span>
             </div>
 
             <div class="quiz-question">
-                <p>4. Which of the following best describes homeostasis?</p>
-                <input type="radio" name="q4" value="A"> A. Ability to grow<br>
-                <input type="radio" name="q4" value="B"> B. Regulation of internal environment<br>
-                <input type="radio" name="q4" value="C"> C. Production of offspring<br>
-                <input type="radio" name="q4" value="D"> D. Cellular respiration<br>
+                <p>4. Which of these structures is found in both prokaryotic and eukaryotic cells?</p>
+                <input type="radio" name="q4" value="A"> A. Cell wall<br>
+                <input type="radio" name="q4" value="B"> B. Ribosomes<br>
                 <span class="feedback" id="feedback4"></span>
             </div>
 
             <div class="quiz-question">
-                <p>5. What term refers to the process by which organisms use energy?</p>
-                <input type="radio" name="q5" value="A"> A. Evolution<br>
-                <input type="radio" name="q5" value="B"> B. Metabolism<br>
-                <input type="radio" name="q5" value="C"> C. Growth<br>
-                <input type="radio" name="q5" value="D"> D. Adaptation<br>
+                <p>5. The cell membrane is responsible for:</p>
+                <input type="radio" name="q5" value="A"> A. Protecting the cell from its environment<br>
+                <input type="radio" name="q5" value="B"> B. Regulating the movement of substances in and out of the cell<br>
                 <span class="feedback" id="feedback5"></span>
             </div>
 
@@ -72,9 +62,10 @@
     <section id="assignment">
         <h2>Assignment</h2>
         <p><strong>Assignment Question:</strong></p>
-        <p>Write a brief paragraph defining the characteristics of living organisms. Include at least five key characteristics and explain why each is essential for life.</p>
-        <p>Please submit your assignment by sending an email to: <a href="mailto:biologymadesimple101@gmail.com"> biologymadesimple101@gmail.com</a></p>
-        <textarea id="assignmentInput" rows="6" placeholder="Write your assignment here..."></textarea>
+        <p>Write a brief comparison of prokaryotic and eukaryotic cells. Highlight key differences in structure, size, and function.</p>
+        <p>Please submit your assignment by sending an email to: <a href="mailto: biologymadesimple101@gmail.com"> biologymadesimple101@gmail.com </a></p>
+        <p>If the link does not work, send your assignment manually to: biologymadesimple101@gmail.com </p>
+        <textarea id="assignmentInput" rows="8" placeholder="Write your assignment here..."></textarea>
         <button id="submitAssignment" onclick="submitAssignment()">Submit Assignment</button>
     </section>
 
