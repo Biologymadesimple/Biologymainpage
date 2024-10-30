@@ -11,9 +11,9 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
 
     // Correct answers for each question
     const correctAnswers = {
-        q1: 'C',
-        q2: 'C',
-        q3: 'C',
+        q1: 'B',
+        q2: 'B',
+        q3: 'B',
         q4: 'B',
         q5: 'B'
     };
@@ -51,4 +51,3 @@ function submitAssignment() {
         document.getElementById('assignmentInput').value = ''; // Clear the textarea
     }
 }
-
