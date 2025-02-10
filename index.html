@@ -3,81 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cell Structure and Function</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <title>Biology Genius Academy</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="mobile-notice" id="mobileNotice">
+        📱 For the best experience, please rotate your device to landscape mode.
+        <button class="notice-close" onclick="this.parentElement.style.display='none'">×</button>
+    </div>
+    <nav class="navbar">
+        <div class="logo">Biology Genius Academy</div>
+        <button class="hamburger" id="hamburgerMenu">&#9776;</button>
+        <div class="nav-links" id="navLinks">
+            <a href="https://videolectures101.github.io/biologyvideolecture/" target="_blank">Video Lectures</a>
+            <a href="https://biologyquiz101.github.io/biologyquiz/" target="_blank">Test Your Knowledge</a>
+            <a href="#" class="resources-link">
+                <span>Downloadable Resources</span>
+                <i class="lock-icon">🔒</i>
+                <div class="upgrade-tooltip">Upgrade to Pro to unlock</div>
+            </a>
+            <a href="https://biologyquiz101.github.io/PracticeQuestions/" target="_blank">Practice Questions</a>
+        </div>
+    </nav>
 
-    <!-- Video Lecture Section -->
-    <section id="lecture">
-        <h1>Video Lecture: Cell Structure and Function</h1>
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/t5DvF5OVr1Y?si=wO8Uo4rDEfIS9i-d" 
-                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-    </section>
+    <div class="upgrade-banner">
+        <a href="https://pricingpage101.github.io/pricings/" class="upgrade-link">
+            <span class="pro-button">🌟 Upgrade to Pro! 🌟</span>
+        </a>
+        <a href="https://pricingpage101.github.io/donation/" class="donate-link">
+            <span class="donate-button">💝 Donate Here! 💝</span>
+        </a>
+    </div>
 
-    <!-- Quiz Section -->
-    <section id="quiz">
-        <h2>Quiz: Cell Structure and Function</h2>
-        <form id="quizForm">
-            <div class="quiz-question">
-                <p>1. What is the primary function of the nucleus in a eukaryotic cell?</p>
-                <input type="radio" name="q1" value="A"> A. Protein synthesis<br>
-                <input type="radio" name="q1" value="B"> B. Containing genetic material<br>
-                <span class="feedback" id="feedback1"></span>
+    <div class="container">
+        <h1>Welcome to Biology Genius Academy</h1>
+        <p>Your comprehensive online biology learning platform. Explore the wonders of life sciences with expert-curated content.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h2>Personalized Learning</h2>
+                <p>Tailored biology courses for students at different learning levels.</p>
             </div>
-
-            <div class="quiz-question">
-                <p>2. Which of the following is a feature of prokaryotic cells?</p>
-                <input type="radio" name="q2" value="A"> A. Presence of membrane-bound organelles<br>
-                <input type="radio" name="q2" value="B"> B. Absence of a true nucleus<br>
-                <span class="feedback" id="feedback2"></span>
+            <div class="feature-box">
+                <h2>Expert Tutors</h2>
+                <p>Learn from experienced biologists and educators.</p>
             </div>
-
-            <div class="quiz-question">
-                <p>3. Mitochondria are known as the powerhouse of the cell because:</p>
-                <input type="radio" name="q3" value="A"> A. They store genetic information<br>
-                <input type="radio" name="q3" value="B"> B. They generate ATP through respiration<br>
-                <span class="feedback" id="feedback3"></span>
+            <div class="feature-box">
+                <h2>Interactive Content</h2>
+                <p>Engaging video lectures, quizzes, and downloadable resources.</p>
             </div>
+        </div>
 
-            <div class="quiz-question">
-                <p>4. Which of these structures is found in both prokaryotic and eukaryotic cells?</p>
-                <input type="radio" name="q4" value="A"> A. Cell wall<br>
-                <input type="radio" name="q4" value="B"> B. Ribosomes<br>
-                <span class="feedback" id="feedback4"></span>
+        <section id="donate" class="donate-section">
+            <h2 class="donation-title">Help Us Advance Biology Education</h2>
+            <div class="donation-image-container">
+                <img src="https://example.com/biology-class.jpg"
+                     alt="Students learning biology in a classroom" 
+                     class="donation-image"
+                     loading="lazy">
             </div>
+            <p class="donation-description">
+                Your support can help us provide free biology tools and resources to students worldwide. Donate today to make biology education accessible to all!
+            </p>
+        </section>
+    </div>
 
-            <div class="quiz-question">
-                <p>5. The cell membrane is responsible for:</p>
-                <input type="radio" name="q5" value="A"> A. Protecting the cell from its environment<br>
-                <input type="radio" name="q5" value="B"> B. Regulating the movement of substances in and out of the cell<br>
-                <span class="feedback" id="feedback5"></span>
+    <div class="telegram-popup" id="telegramPopup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div class="popup-header">
+                <img src="https://logos-world.net/wp-content/uploads/2021/03/Telegram-Symbol.png" 
+                     alt="Telegram Logo" 
+                     class="telegram-logo">
+                <h2>🚨 Limited Time Access! 🚨</h2>
             </div>
+            <div class="popup-body">
+                <p class="urgent-msg">⚠️ Our Telegram group is closing in less than 24 hours!</p>
+                <p>Join our exclusive Telegram channel to access:</p>
+                <ul>
+                    <li>📚 Free Video Lectures</li>
+                    <li>📝 Study Materials</li>
+                    <li>👥 Community Support</li>
+                    <li>🎯 Practice Questions</li>
+                </ul>
+                <a href="https://t.me/biologyhub101" class="join-btn" target="_blank">
+                    Join Now Before It's Too Late!
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Biology Genius Academy. All Rights Reserved.</p>
+    </footer>
 
-            <button type="submit">Submit Quiz</button>
-        </form>
-    </section>
-
-    <!-- Assignment Section -->
-    <section id="assignment">
-        <h2>Assignment</h2>
-        <p><strong>Assignment Question:</strong></p>
-        <p>Write a brief comparison of prokaryotic and eukaryotic cells. Highlight key differences in structure, size, and function.</p>
-        <p>Please submit your assignment by sending an email to: <a href="mailto: biologymadesimple101@gmail.com"> biologymadesimple101@gmail.com </a></p>
-        <p>If the link does not work, send your assignment manually to: biologymadesimple101@gmail.com </p>
-        <textarea id="assignmentInput" rows="8" placeholder="Write your assignment here..."></textarea>
-        <button id="submitAssignment" onclick="submitAssignment()">Submit Assignment</button>
-    </section>
-
-    <!-- Donation Section -->
-    <section id="donation">
-        <h2>PLEASE DONATE</h2>
-        <p>Account Number: 2032202001590</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GTBank_logo.svg/768px-GTBank_logo.svg.png" alt="GTBank Logo" width="150">
-        <p>Wave Mobile: 3709558</p>
-        <img src="https://s.rfi.fr/media/display/ed44f02a-c239-11ec-b0fc-005056bf8594/w:1280/p:16x9/wave-senegal-mobile-money.png" alt="Wave Mobile Logo" width="150">
-    </section>
-
-    <script src="script.js"></script> <!-- Link to external JS file -->
+    <script src="script.js"></script>
 </body>
 </html>
